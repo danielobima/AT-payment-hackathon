@@ -1,4 +1,4 @@
-import { Router } from "express";
+import { Router, response } from "express";
 
 const router = Router();
 
@@ -9,7 +9,7 @@ router.get("/", (_, res) => {
 router.post("/ussd", (req, res) => {
   console.log(req.body);
 
-  res.send("CON:Hello world");
+  res.setHeader("Content-Type", "text/plain").send("CON:Hello world");
 });
 
 export default router;
