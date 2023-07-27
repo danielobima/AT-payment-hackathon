@@ -1,0 +1,10 @@
+{
+  "verbose": true,
+  "ignore": ["*.test.js", "**/fixtures/**"],
+  "exec": " npx ts-node src/index.ts",
+  "watch": ["src"],
+  "ext": "ts",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
