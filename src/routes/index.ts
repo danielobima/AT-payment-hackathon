@@ -9,7 +9,7 @@ router.get("/", (_, res) => {
 router.post("/ussd", (req, res) => {
   console.log(req.body);
 
-  res.setHeader("Content-Type", "text/plain").send("CON:Hello world");
+  res.setHeader("Content-Type", "text/plain").send("END Hello world");
 });
 
 export default router;
